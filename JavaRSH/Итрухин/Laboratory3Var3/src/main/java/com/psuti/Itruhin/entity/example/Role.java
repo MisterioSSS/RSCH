@@ -1,0 +1,18 @@
+package com.psuti.Itruhin.entity.example;
+
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.io.*;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "roles")
+public class Role implements Serializable {
+    @Id
+    @Column(name = "name", nullable = false)
+    private String name;
+}
